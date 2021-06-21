@@ -165,6 +165,7 @@ public class Game extends JPanel implements ActionListener
 	{
 		if ((snake.get(0).getX() == food.getX()) && (snake.get(0).getY() == food.getY())) 
 		{
+			snake.add(new Vector2(snake.get(1)));
 			foodEaten++;
 			newApple();
 		}
